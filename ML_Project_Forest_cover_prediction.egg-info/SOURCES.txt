@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ML_Project_Forest_cover_prediction.egg-info/PKG-INFO
+ML_Project_Forest_cover_prediction.egg-info/SOURCES.txt
+ML_Project_Forest_cover_prediction.egg-info/dependency_links.txt
+ML_Project_Forest_cover_prediction.egg-info/requires.txt
+ML_Project_Forest_cover_prediction.egg-info/top_level.txt
+src/__init__.py
