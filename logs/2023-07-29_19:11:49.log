@@ -1,0 +1,3 @@
+2023-07-29 19:11:49,093:INFO:Entering data ingestion
+2023-07-29 19:11:49,115:INFO:Splitting data into train and test
+2023-07-29 19:11:49,117:INFO:Saving data to artifacts
