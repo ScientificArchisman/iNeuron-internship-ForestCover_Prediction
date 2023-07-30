@@ -1,3 +1,0 @@
-2023-07-29 19:11:06,094:ERROR:Error in saving the object at artifacts/preprocessor.pkl
-2023-07-29 19:11:06,094:ERROR:[Errno 2] No such file or directory: 'artifacts/preprocessor.pkl'
-2023-07-29 19:11:06,094:ERROR:Error loading data for transformation - [Errno 2] No such file or directory: 'artifacts/train_data.csv'

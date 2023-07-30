@@ -10,7 +10,7 @@ from src.logger import logging
     
 @dataclass
 class DataIngestion:
-    root_data_file : str = os.path.join("artifacts")
+    root_data_file : str = os.path.join("artifacts", "data")
     test_data_file : str = os.path.join(root_data_file, "test_data.csv")
     train_data_file : str = os.path.join(root_data_file, "train_data.csv")
     raw_data_file : str = os.path.join(root_data_file, "raw_data.csv")

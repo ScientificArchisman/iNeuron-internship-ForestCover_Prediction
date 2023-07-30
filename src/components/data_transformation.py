@@ -32,6 +32,7 @@ class DataTransformation:
                                 'Soil_Type37', 'Soil_Type38', 'Soil_Type39', 'Soil_Type40']
         
         self.root_data_file : str = os.path.join("artifacts", "transformed_data")
+        self.root_preprocessor_file : str = os.path.join("artifacts", "preprocessor")
         self.train_features_path : str =  os.path.join(self.root_data_file, "train_features.csv")
         self.train_labels_path : str = os.path.join(self.root_data_file, "train_labels.csv")
         self.test_features_path : str = os.path.join(self.root_data_file, "test_features.csv")
@@ -63,7 +64,9 @@ class DataTransformation:
                                              ("remover", SelectKBest(score_func=mutual_info_classif, k = k))])  
 
         # Save the preprocessor
-        save_pickle(overall_pipeline, self.PREPROCESSOR_PATH) 
+        os.makedirs(self.root_preprocessor_file, exist_ok=True)
+        PREPROCESSOR_PATH = os.path.join(self.root_preprocessor_file, "preprocessor.pkl")
+        save_pickle(overall_pipeline, PREPROCESSOR_PATH) 
         return overall_pipeline 
 
     def initiate_data_transformation(self, train_data_file : str, test_data_file : str):
@@ -78,35 +81,75 @@ class DataTransformation:
             y_test (np.ndarray): Transformed testing labels
         """
         try:
+            logging.info("Loading data for transformation")
             train_data = pd.read_csv(train_data_file).drop(columns = ["Id"])
             test_data = pd.read_csv(test_data_file).drop(columns = ["Id"])
             logging.info("Data loaded successfully for transformation")
         except Exception as e:
             logging.error(f"Error loading data for transformation - {e}")
-            raise CustomException(e, sys)
 
         # Split data into features and labels
-        X_train = train_data.drop(columns = ["Cover_Type"])
-        y_train = train_data["Cover_Type"]
+        try:
+            logging.info("Splitting data into features and labels")
+            X_train = train_data.drop(columns = ["Cover_Type"])
+            y_train = train_data["Cover_Type"]
+            logging.info("Training Data split successfully into features and labels")
 
-        X_test = test_data.drop(columns = ["Cover_Type"])
-        y_test = test_data["Cover_Type"]
+            X_test = test_data.drop(columns = ["Cover_Type"])
+            y_test = test_data["Cover_Type"]
+            logging.info("Testing Data split successfully into features and labels")
 
-        preprocessor = self.get_data_preprocessor() # Get the preprocessor
+        except Exception as e:
+            logging.error(f"Error splitting data into features and labels - {e}")
+            sys.exit(1)
+
+        # Get the preprocessor
+        try:
+            logging.info("Getting the preprocessor")
+            preprocessor = self.get_data_preprocessor()
+            logging.info("Preprocessor loaded successfully")
+        
+        except Exception as e:
+            logging.error(f"Error loading preprocessor - {e}")
+            sys.exit(1)
 
         # Fit the training set with the preprocessor
-        preprocessor.fit(X_train, y_train)
-
+        try:
+            logging.info("Fitting the training set with the preprocessor")
+            preprocessor.fit(X_train, y_train)
+            logging.info("Training set fitted successfully")
+        except Exception as e:
+            logging.error(f"Error fitting the training set with the preprocessor - {e}")
+            sys.exit(1)
+            
         # Transform the training and testing dataset with the fitted preprocessor
-        X_train = preprocessor.transform(X_train)
-        X_test = preprocessor.transform(X_test)
+        try:
+            logging.info("Transforming the training and testing dataset with the fitted preprocessor")
+            X_train = preprocessor.transform(X_train)
+            logging.info("Training set transformed successfully")
+            X_test = preprocessor.transform(X_test)
+            logging.info("Testing set transformed successfully")
+        except Exception as e:
+            logging.error(f"Error transforming the training and testing dataset with the fitted preprocessor - {e}")
+            sys.exit(1)
 
         # Save the transformed data
-        os.makedirs(self.root_data_file, exist_ok=True)
-        pd.DataFrame(X_train).to_csv(self.train_features_path, index = False)
-        pd.DataFrame(y_train).to_csv(self.train_labels_path, index = False)
-        pd.DataFrame(X_test).to_csv(self.test_features_path, index = False)
-        pd.DataFrame(y_test).to_csv(self.test_labels_path, index = False)
+        try:
+            logging.info("Saving the transformed data")
+            os.makedirs(self.root_data_file, exist_ok=True)
+            logging.info("Directory for transformed data created successfully")
+            pd.DataFrame(X_train).to_csv(self.train_features_path, index = False)
+            logging.info("Training features saved successfully")
+            pd.DataFrame(y_train).to_csv(self.train_labels_path, index = False)
+            logging.info("Training labels saved successfully")
+            pd.DataFrame(X_test).to_csv(self.test_features_path, index = False)
+            logging.info("Testing features saved successfully")
+            pd.DataFrame(y_test).to_csv(self.test_labels_path, index = False)
+            logging.info("Testing labels saved successfully")
+
+        except Exception as e:
+            logging.error(f"Error saving the transformed data - {e}")
+            raise CustomException("Error saving the transformed data", sys)
 
         return (X_train, X_test, y_train, y_test)
 
@@ -121,4 +164,4 @@ class DataTransformation:
 if __name__ == "__main__":
     data_transform = DataTransformation()
     data_transform.get_data_preprocessor()
-    data_transform.initiate_data_transformation("artifacts/train_data.csv", "artifacts/test_data.csv")
+    data_transform.initiate_data_transformation("artifacts/data/train_data.csv", "artifacts/data/test_data.csv")
