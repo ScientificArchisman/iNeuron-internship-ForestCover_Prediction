@@ -10,11 +10,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
 from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import LabelEncoder
 
 class DataTransformation:
 
     def __init__(self):
-        self.PREPROCESSOR_PATH : str = os.path.join("artifacts", "preprocessor.pkl")
         self.numerical_columns : list = ['Elevation', 'Aspect', 'Slope',
                                 'Horizontal_Distance_To_Hydrology', 'Vertical_Distance_To_Hydrology',
                                 'Horizontal_Distance_To_Roadways', 'Hillshade_9am', 'Hillshade_Noon',
@@ -55,6 +55,8 @@ class DataTransformation:
             steps = [("imputer", SimpleImputer(strategy = "most_frequent")),
                      ("onehot", OneHotEncoder(handle_unknown = "ignore"))])
         
+        label_encoder = LabelEncoder()
+        
         # Column transformer
         transformer = ColumnTransformer([("num_pipeline", numerical_pipeline, self.numerical_columns), 
                                          ("cat_pipeline", categorical_pipeline, self.categorical_columns)])
@@ -66,8 +68,10 @@ class DataTransformation:
         # Save the preprocessor
         os.makedirs(self.root_preprocessor_file, exist_ok=True)
         PREPROCESSOR_PATH = os.path.join(self.root_preprocessor_file, "preprocessor.pkl")
+        LABEL_ENCODING_PATH = os.path.join(self.root_preprocessor_file, "label_encoding.pkl")
         save_pickle(overall_pipeline, PREPROCESSOR_PATH) 
-        return overall_pipeline 
+        save_pickle(label_encoder, LABEL_ENCODING_PATH)
+        return overall_pipeline, label_encoder
 
     def initiate_data_transformation(self, train_data_file : str, test_data_file : str):
         """Transforms the data and saves it in artifacts
@@ -106,7 +110,7 @@ class DataTransformation:
         # Get the preprocessor
         try:
             logging.info("Getting the preprocessor")
-            preprocessor = self.get_data_preprocessor()
+            preprocessor, label_encoder = self.get_data_preprocessor()
             logging.info("Preprocessor loaded successfully")
         
         except Exception as e:
@@ -117,6 +121,7 @@ class DataTransformation:
         try:
             logging.info("Fitting the training set with the preprocessor")
             preprocessor.fit(X_train, y_train)
+            label_encoder.fit(y_train.values.ravel())
             logging.info("Training set fitted successfully")
         except Exception as e:
             logging.error(f"Error fitting the training set with the preprocessor - {e}")
@@ -126,8 +131,10 @@ class DataTransformation:
         try:
             logging.info("Transforming the training and testing dataset with the fitted preprocessor")
             X_train = preprocessor.transform(X_train)
+            y_train = label_encoder.transform(y_train.values.ravel())
             logging.info("Training set transformed successfully")
             X_test = preprocessor.transform(X_test)
+            y_test = label_encoder.transform(y_test.values.ravel())
             logging.info("Testing set transformed successfully")
         except Exception as e:
             logging.error(f"Error transforming the training and testing dataset with the fitted preprocessor - {e}")

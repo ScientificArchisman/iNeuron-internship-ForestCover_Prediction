@@ -1,5 +1,0 @@
-2023-07-30 18:58:51,037:INFO:Object saved at artifacts/preprocessor/preprocessor.pkl
-2023-07-30 18:58:51,037:INFO:Loading data for transformation
-2023-07-30 18:58:51,038:ERROR:Error loading data for transformation - [Errno 2] No such file or directory: 'artifacts/train_data.csv'
-2023-07-30 18:58:51,038:INFO:Splitting data into features and labels
-2023-07-30 18:58:51,038:ERROR:Error splitting data into features and labels - cannot access local variable 'train_data' where it is not associated with a value
