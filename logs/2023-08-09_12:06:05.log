@@ -1,0 +1,16 @@
+2023-08-09 12:06:05,393:INFO:Evaluating Random Forest
+2023-08-09 12:06:07,001:INFO:Score for Random Forest is 0.8611111111111112
+2023-08-09 12:06:07,002:INFO:Evaluating XGBoost
+2023-08-09 12:06:10,350:INFO:Score for XGBoost is 0.8396164021164021
+2023-08-09 12:06:10,350:INFO:Evaluating Decision Tree
+2023-08-09 12:06:10,470:INFO:Score for Decision Tree is 0.77744708994709
+2023-08-09 12:06:10,470:INFO:Evaluating Gradient Boosting
+2023-08-09 12:06:23,949:INFO:Score for Gradient Boosting is 0.7701719576719577
+2023-08-09 12:06:23,949:INFO:Evaluating Ada Boost
+2023-08-09 12:06:24,477:INFO:Score for Ada Boost is 0.39715608465608465
+2023-08-09 12:06:24,477:INFO:Evaluating Extra Tree
+2023-08-09 12:06:24,493:INFO:Score for Extra Tree is 0.705026455026455
+2023-08-09 12:06:24,497:INFO:Model results saved successfully
+2023-08-09 12:06:24,498:INFO:Saving the best model = Random Forest
+2023-08-09 12:06:24,519:INFO:Object saved at artifacts/model_data/model.pkl
+2023-08-09 12:06:24,519:INFO:Best model saved successfully

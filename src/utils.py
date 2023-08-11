@@ -64,6 +64,7 @@ def evaluate_models(models:dict, X_train:np.ndarray, y_train:np.ndarray, X_test:
         logging.info(f"Score for {model_name} is {model.score(X_test, y_test)}")
         
     return pd.DataFrame({"Model": models.keys(), 
+                         "Model_specs" : models.values(),
                          "Accuracy": accuracies, 
                          "Precision": precisions, 
                          "Recall": recalls, "F1": f1s})

@@ -3,4 +3,10 @@ numpy
 matplotlib
 seaborn
 scikit-learn
+pyaml
+tpot
+torch
+torchvision
+torchaudio
+optuna
 -e .
