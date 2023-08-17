@@ -4,39 +4,40 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 from src.logger import logging
 
-# Save an object as a pickle file
-def save_pickle(obj, path):
-    """Saves an object as a pickle file
-    Args:
-        obj (object): Object to be saved
-        path (str): Path to save the object
+def save_pickle(preprocessor, filename):
     """
-    try:
-        with open(path, "wb") as f:
-            pickle.dump(obj, f)
-        logging.info(f"Object saved at {path}")
-    except Exception as e:
-        logging.error(f"Error in saving the object at {path}")
-        logging.error(e)
-
-
-# Load a pickle file as an object
-def load_pickle(path:str):
-    """Loads a pickle file as an object
-    Args:
-        path (str): Path to load the object
-    Returns:
-        object: Object loaded from the pickle file
-    """
-    try:
-        with open(path, "rb") as f:
-            obj = pickle.load(f)
-        logging.info(f"Object loaded from {path}")
-        return obj
-    except Exception as e:
-        logging.error(f"Error in loading the object at {path}")
-        logging.error(e)
+    Save a scikit-learn object to a file using pickle.
     
+    Parameters:
+        preprocessor (scikit-learn transformer): The preprocessor object to be saved.
+        filename (str): The name of the file to save the preprocessor object to.
+    """
+    try:
+        with open(filename, 'wb') as f:
+            pickle.dump(preprocessor, f)
+        logging.info(f"Preprocessor saved to {filename}")
+    except Exception as e:
+        logging.error("Error saving preprocessor: %s", e)
+
+def load_pickle(filename):
+    """
+    Load a scikit-learn preprocessor object from a file using pickle.
+    
+    Parameters:
+        filename (str): The name of the file to load the preprocessor object from.
+        
+    Returns:
+        preprocessor (scikit-learn transformer): The loaded preprocessor object.
+    """
+    try:
+        with open(filename, 'rb') as f:
+            preprocessor = pickle.load(f)
+        logging.info(f"Preprocessor loaded from {filename}")
+        return preprocessor
+    except Exception as e:
+        logging.error("Error loading preprocessor: %s", e)
+        return None
+
 
 def evaluate_models(models:dict, X_train:np.ndarray, y_train:np.ndarray, X_test:np.ndarray, y_test:np.ndarray) -> pd.DataFrame:
     """Evaluates a number of models using the same training and testing datasets.

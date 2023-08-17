@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train a Model</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Train a Model</h1>
+        <form action="/train" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Choose a CSV file for training:</label>
+                <input type="file" class="form-control-file" name="file" accept=".csv" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Train Model</button>
+        </form>
+    </div>
+</body>
+</html>

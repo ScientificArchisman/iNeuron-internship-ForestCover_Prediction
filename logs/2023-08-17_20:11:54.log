@@ -1,0 +1,11 @@
+2023-08-17 20:11:54,812:WARNING: * Debugger is active!
+2023-08-17 20:11:54,819:INFO: * Debugger PIN: 735-808-071
+2023-08-17 20:11:56,104:INFO:127.0.0.1 - - [17/Aug/2023 20:11:56] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:01,169:INFO:127.0.0.1 - - [17/Aug/2023 20:12:01] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:02,562:INFO:127.0.0.1 - - [17/Aug/2023 20:12:02] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:02,760:INFO:127.0.0.1 - - [17/Aug/2023 20:12:02] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:02,956:INFO:127.0.0.1 - - [17/Aug/2023 20:12:02] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:03,141:INFO:127.0.0.1 - - [17/Aug/2023 20:12:03] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:03,318:INFO:127.0.0.1 - - [17/Aug/2023 20:12:03] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:03,490:INFO:127.0.0.1 - - [17/Aug/2023 20:12:03] "POST /predict_data HTTP/1.1" 200 -
+2023-08-17 20:12:09,609:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

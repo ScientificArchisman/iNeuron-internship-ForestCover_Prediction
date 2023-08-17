@@ -1,0 +1,4 @@
+2023-08-18 00:16:28,568:INFO:Entering data ingestion
+2023-08-18 00:16:28,574:WARNING: * Debugger is active!
+2023-08-18 00:16:28,581:INFO: * Debugger PIN: 735-808-071
+2023-08-18 00:16:30,749:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

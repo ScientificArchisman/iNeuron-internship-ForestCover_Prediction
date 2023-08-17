@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trained Model Parameters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trained Model Parameters</h1>
+        <p><strong>Coefficients:</strong></p>
+        <ul>
+            {% for coef in model_params['model_params'] %}
+                <li>{{ coef }}</li>
+            {% endfor %}
+        </ul>
+        <p><strong>Name:</strong> {{ model_params['Name'] }}</p>
+        <p><strong>Accuracy:</strong> {{ model_params['accuracy'] }}</p>
+    </div>
+</body>
+</html>

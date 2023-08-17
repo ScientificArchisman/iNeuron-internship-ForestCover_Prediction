@@ -1,0 +1,9 @@
+2023-08-17 20:01:54,066:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-08-17 20:01:54,066:INFO:[33mPress CTRL+C to quit[0m
+2023-08-17 20:01:54,068:INFO: * Restarting with stat
+2023-08-17 20:02:28,502:INFO: * Restarting with stat
+2023-08-17 20:02:58,810:INFO: * Restarting with stat
+2023-08-17 20:03:17,432:INFO: * Restarting with stat
+2023-08-17 20:03:21,329:INFO: * Restarting with stat
+2023-08-17 20:03:28,425:INFO: * Restarting with stat

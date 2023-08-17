@@ -12,6 +12,20 @@ from sklearn.feature_selection import SelectKBest, mutual_info_classif
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import LabelEncoder
 
+
+# Custom class to remove columns
+class ColumnRemover:
+    def __init__(self, columns):
+        self.columns = columns
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        res : pd.DataFrame =  X[self.columns]
+        res.columns = res.columns
+        return res
+
 class DataTransformation:
 
     def __init__(self):
@@ -20,16 +34,13 @@ class DataTransformation:
                                 'Horizontal_Distance_To_Roadways', 'Hillshade_9am', 'Hillshade_Noon',
                                 'Hillshade_3pm', 'Horizontal_Distance_To_Fire_Points']
         self.categorical_columns : list = ['Wilderness_Area1', 'Wilderness_Area2', 'Wilderness_Area3',
-                                'Wilderness_Area4', 'Soil_Type1', 'Soil_Type2', 'Soil_Type3',
-                                'Soil_Type4', 'Soil_Type5', 'Soil_Type6', 'Soil_Type7', 'Soil_Type8',
-                                'Soil_Type9', 'Soil_Type10', 'Soil_Type11', 'Soil_Type12',
-                                'Soil_Type13', 'Soil_Type14', 'Soil_Type15', 'Soil_Type16',
-                                'Soil_Type17', 'Soil_Type18', 'Soil_Type19', 'Soil_Type20',
-                                'Soil_Type21', 'Soil_Type22', 'Soil_Type23', 'Soil_Type24',
-                                'Soil_Type25', 'Soil_Type26', 'Soil_Type27', 'Soil_Type28',
-                                'Soil_Type29', 'Soil_Type30', 'Soil_Type31', 'Soil_Type32',
-                                'Soil_Type33', 'Soil_Type34', 'Soil_Type35', 'Soil_Type36',
-                                'Soil_Type37', 'Soil_Type38', 'Soil_Type39', 'Soil_Type40']
+                                'Wilderness_Area4', 'Soil_Type1']
+        
+        self.reqd_columns : list = ['Elevation','Aspect','Slope','Horizontal_Distance_To_Hydrology',
+                                    'Vertical_Distance_To_Hydrology','Horizontal_Distance_To_Roadways',
+                                    'Hillshade_9am','Hillshade_Noon','Hillshade_3pm',
+                                    'Horizontal_Distance_To_Fire_Points','Wilderness_Area1',
+                                    'Wilderness_Area2','Wilderness_Area3','Wilderness_Area4', 'Soil_Type1']
         
         self.root_data_file : str = os.path.join("artifacts", "transformed_data")
         self.root_preprocessor_file : str = os.path.join("artifacts", "preprocessor")
@@ -45,6 +56,8 @@ class DataTransformation:
         Returns:
             preprocessor: sklearn ColumnTransformer object
         """
+
+
         # Numerical pipeline
         numerical_pipeline = Pipeline(
             steps = [("imputer", SimpleImputer(strategy = "mean")),
@@ -62,8 +75,8 @@ class DataTransformation:
                                          ("cat_pipeline", categorical_pipeline, self.categorical_columns)])
         
         # Mutual information feature selection
-        overall_pipeline = Pipeline(steps = [("transformer", transformer), 
-                                             ("remover", SelectKBest(score_func=mutual_info_classif, k = k))])  
+        overall_pipeline = Pipeline(steps = [("remover", ColumnRemover(self.reqd_columns)),
+                                                ("transformer", transformer)])
 
         # Save the preprocessor
         os.makedirs(self.root_preprocessor_file, exist_ok=True)
@@ -119,12 +132,20 @@ class DataTransformation:
 
         # Fit the training set with the preprocessor
         try:
-            logging.info("Fitting the training set with the preprocessor")
-            preprocessor.fit(X_train, y_train)
-            label_encoder.fit(y_train.values.ravel())
-            logging.info("Training set fitted successfully")
+            logging.info("Fitting the training features set with the preprocessor")
+            preprocessor.fit(X_train)
+            logging.info("Training features set fitted successfully")
         except Exception as e:
-            logging.error(f"Error fitting the training set with the preprocessor - {e}")
+            logging.error(f"Error fitting the training features set with the preprocessor - {e}")
+            sys.exit(1)
+        
+        try:
+            logging.info("Fitting the training labels set with the preprocessor")
+            label_encoder.fit(y_train.values.ravel())
+            logging.info("Training labels set fitted successfully")
+
+        except Exception as e:
+            logging.error(f"Error fitting the training labels set with the preprocessor - {e}")
             sys.exit(1)
             
         # Transform the training and testing dataset with the fitted preprocessor
@@ -172,3 +193,4 @@ if __name__ == "__main__":
     data_transform = DataTransformation()
     data_transform.get_data_preprocessor()
     data_transform.initiate_data_transformation("artifacts/data/train_data.csv", "artifacts/data/test_data.csv")
+ 

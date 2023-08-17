@@ -1,5 +1,5 @@
 Model,Model_specs,Accuracy,Precision,Recall,F1
-Random Forest,RandomForestClassifier(),0.8581377024762249,0.8581377024762249,0.8581377024762249,0.8581377024762249
+Random Forest,RandomForestClassifier(),0.8508235428857482,0.8508235428857482,0.8508235428857482,0.8508235428857482
 XGBoost,"XGBClassifier(base_score=None, booster=None, callbacks=None,
               colsample_bylevel=None, colsample_bynode=None,
               colsample_bytree=None, early_stopping_rounds=None,
@@ -10,8 +10,8 @@ XGBoost,"XGBClassifier(base_score=None, booster=None, callbacks=None,
               max_delta_step=None, max_depth=None, max_leaves=None,
               min_child_weight=None, missing=nan, monotone_constraints=None,
               n_estimators=100, n_jobs=None, num_parallel_tree=None,
-              objective='multi:softprob', predictor=None, ...)",0.8363206820213935,0.8363206820213935,0.8363206820213935,0.8363206820213935
-Decision Tree,DecisionTreeClassifier(),0.776155297374481,0.776155297374481,0.776155297374481,0.776155297374481
-Gradient Boosting,GradientBoostingClassifier(),0.7655639743385299,0.7655639743385299,0.7655639743385299,0.7655639743385299
-Ada Boost,AdaBoostClassifier(),0.26672963002405886,0.26672963002405886,0.26672963002405886,0.26672963002405886
-Extra Tree,ExtraTreeClassifier(),0.7031808009182717,0.7031808009182717,0.7031808009182717,0.7031808009182717
+              objective='multi:softprob', predictor=None, ...)",0.8447732951950382,0.8447732951950382,0.8447732951950382,0.8447732951950382
+Decision Tree,DecisionTreeClassifier(),0.7672976089920237,0.7672976089920237,0.7672976089920237,0.7672976089920237
+Gradient Boosting,GradientBoostingClassifier(),0.7800621013258617,0.7800621013258617,0.7800621013258617,0.7800621013258617
+Ada Boost,AdaBoostClassifier(),0.25739944455123415,0.25739944455123415,0.25739944455123415,0.25739944455123415
+Extra Tree,ExtraTreeClassifier(),0.6674261364648809,0.6674261364648809,0.6674261364648809,0.6674261364648809

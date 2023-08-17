@@ -1,0 +1,19 @@
+2023-08-17 20:15:26,976:WARNING: * Debugger is active!
+2023-08-17 20:15:26,983:INFO: * Debugger PIN: 735-808-071
+2023-08-17 20:15:28,191:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-17 20:15:28,192:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-17 20:15:28,192:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-17 20:15:28,192:ERROR:Error in preprocessing data: 'FileStorage' object is not subscriptable
+2023-08-17 20:15:28,198:INFO:127.0.0.1 - - [17/Aug/2023 20:15:28] "[35m[1mPOST /predict_data HTTP/1.1[0m" 500 -
+2023-08-17 20:15:28,209:INFO:127.0.0.1 - - [17/Aug/2023 20:15:28] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-08-17 20:15:28,211:INFO:127.0.0.1 - - [17/Aug/2023 20:15:28] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-08-17 20:15:28,215:INFO:127.0.0.1 - - [17/Aug/2023 20:15:28] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-17 20:15:32,387:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-17 20:15:32,388:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-17 20:15:32,388:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-17 20:15:32,388:ERROR:Error in preprocessing data: 'FileStorage' object is not subscriptable
+2023-08-17 20:15:32,393:INFO:127.0.0.1 - - [17/Aug/2023 20:15:32] "[35m[1mPOST /predict_data HTTP/1.1[0m" 500 -
+2023-08-17 20:15:32,401:INFO:127.0.0.1 - - [17/Aug/2023 20:15:32] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-08-17 20:15:32,401:INFO:127.0.0.1 - - [17/Aug/2023 20:15:32] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-08-17 20:15:32,405:INFO:127.0.0.1 - - [17/Aug/2023 20:15:32] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-08-17 20:16:21,075:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

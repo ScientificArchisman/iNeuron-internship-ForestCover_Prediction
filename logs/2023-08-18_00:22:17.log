@@ -1,0 +1,58 @@
+2023-08-18 00:22:18,458:INFO:Entering data ingestion
+2023-08-18 00:22:18,464:WARNING: * Debugger is active!
+2023-08-18 00:22:18,473:INFO: * Debugger PIN: 735-808-071
+2023-08-18 00:22:18,635:INFO:Splitting data into train and test
+2023-08-18 00:22:18,638:INFO:Saving data to artifacts
+2023-08-18 00:22:18,837:INFO:Loading data for transformation
+2023-08-18 00:22:18,867:INFO:Data loaded successfully for transformation
+2023-08-18 00:22:18,867:INFO:Splitting data into features and labels
+2023-08-18 00:22:18,868:INFO:Training Data split successfully into features and labels
+2023-08-18 00:22:18,869:INFO:Testing Data split successfully into features and labels
+2023-08-18 00:22:18,869:INFO:Getting the preprocessor
+2023-08-18 00:22:18,870:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-18 00:22:18,870:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-18 00:22:18,870:INFO:Preprocessor loaded successfully
+2023-08-18 00:22:18,870:INFO:Fitting the training features set with the preprocessor
+2023-08-18 00:22:18,883:INFO:Training features set fitted successfully
+2023-08-18 00:22:18,883:INFO:Fitting the training labels set with the preprocessor
+2023-08-18 00:22:18,883:INFO:Training labels set fitted successfully
+2023-08-18 00:22:18,883:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-08-18 00:22:18,891:INFO:Training set transformed successfully
+2023-08-18 00:22:18,895:INFO:Testing set transformed successfully
+2023-08-18 00:22:18,895:INFO:Saving the transformed data
+2023-08-18 00:22:18,895:INFO:Directory for transformed data created successfully
+2023-08-18 00:22:19,075:INFO:Training features saved successfully
+2023-08-18 00:22:19,082:INFO:Training labels saved successfully
+2023-08-18 00:22:19,123:INFO:Testing features saved successfully
+2023-08-18 00:22:19,126:INFO:Testing labels saved successfully
+2023-08-18 00:22:19,158:INFO:Evaluating Random Forest
+2023-08-18 00:22:21,566:INFO:Score for Random Forest is 0.853505291005291
+2023-08-18 00:22:21,566:INFO:Evaluating XGBoost
+2023-08-18 00:22:26,915:INFO:Score for XGBoost is 0.84755291005291
+2023-08-18 00:22:26,915:INFO:Evaluating Decision Tree
+2023-08-18 00:22:27,116:INFO:Score for Decision Tree is 0.7685185185185185
+2023-08-18 00:22:27,116:INFO:Evaluating Gradient Boosting
+2023-08-18 00:22:47,707:INFO:Score for Gradient Boosting is 0.7847222222222222
+2023-08-18 00:22:47,707:INFO:Evaluating Ada Boost
+2023-08-18 00:22:48,402:INFO:Score for Ada Boost is 0.34656084656084657
+2023-08-18 00:22:48,402:INFO:Evaluating Extra Tree
+2023-08-18 00:22:48,420:INFO:Score for Extra Tree is 0.6693121693121693
+2023-08-18 00:22:48,423:INFO:Model results saved successfully
+2023-08-18 00:22:48,423:INFO:Saving the best model = Random Forest
+2023-08-18 00:22:48,442:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-08-18 00:22:48,442:INFO:Best model saved successfully
+2023-08-18 00:22:48,455:INFO:127.0.0.1 - - [18/Aug/2023 00:22:48] "POST /train HTTP/1.1" 200 -
+2023-08-18 00:23:08,257:INFO:127.0.0.1 - - [18/Aug/2023 00:23:08] "GET / HTTP/1.1" 200 -
+2023-08-18 00:23:15,181:INFO:Data loaded successfully
+2023-08-18 00:23:15,207:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-18 00:23:15,208:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-18 00:23:15,210:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-18 00:23:15,301:INFO:Prediction completed
+2023-08-18 00:23:15,304:INFO:127.0.0.1 - - [18/Aug/2023 00:23:15] "POST / HTTP/1.1" 200 -
+2023-08-18 00:24:01,284:INFO:Data loaded successfully
+2023-08-18 00:24:01,313:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-18 00:24:01,314:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-18 00:24:01,314:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-18 00:24:01,578:INFO:Prediction completed
+2023-08-18 00:24:01,580:INFO:127.0.0.1 - - [18/Aug/2023 00:24:01] "POST / HTTP/1.1" 200 -
+2023-08-18 00:25:56,539:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/src/pipeline/training_pipeline.py', reloading

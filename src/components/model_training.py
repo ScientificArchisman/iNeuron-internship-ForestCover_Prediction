@@ -201,6 +201,6 @@ if __name__ == "__main__":
                               X_test_path= "artifacts/transformed_data/test_features.csv", 
                               y_train_path= "artifacts/transformed_data/train_labels.csv",
                               y_test_path= "artifacts/transformed_data/test_labels.csv")
-    # model_training.fit_models()
-    model_training.tune_model()
+    model_training.fit_models()  
+    # model_training.tune_model()
     

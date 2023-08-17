@@ -1,0 +1,5 @@
+2023-08-17 00:19:29,337:INFO:Data loaded successfully
+2023-08-17 00:19:29,391:INFO:Object loaded from artifacts/model_data/model.pkl
+2023-08-17 00:19:29,392:INFO:Object saved at artifacts/preprocessor/preprocessor.pkl
+2023-08-17 00:19:29,392:INFO:Object saved at artifacts/preprocessor/label_encoding.pkl
+2023-08-17 00:19:29,413:INFO:Prediction completed

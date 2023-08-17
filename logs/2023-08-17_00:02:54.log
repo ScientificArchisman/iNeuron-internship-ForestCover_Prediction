@@ -1,0 +1,24 @@
+2023-08-17 00:02:56,416:INFO:Object saved at artifacts/preprocessor/preprocessor.pkl
+2023-08-17 00:02:56,417:INFO:Object saved at artifacts/preprocessor/label_encoding.pkl
+2023-08-17 00:02:56,417:INFO:Loading data for transformation
+2023-08-17 00:02:56,453:INFO:Data loaded successfully for transformation
+2023-08-17 00:02:56,453:INFO:Splitting data into features and labels
+2023-08-17 00:02:56,454:INFO:Training Data split successfully into features and labels
+2023-08-17 00:02:56,454:INFO:Testing Data split successfully into features and labels
+2023-08-17 00:02:56,454:INFO:Getting the preprocessor
+2023-08-17 00:02:56,454:INFO:Object saved at artifacts/preprocessor/preprocessor.pkl
+2023-08-17 00:02:56,454:INFO:Object saved at artifacts/preprocessor/label_encoding.pkl
+2023-08-17 00:02:56,454:INFO:Preprocessor loaded successfully
+2023-08-17 00:02:56,455:INFO:Fitting the training features set with the preprocessor
+2023-08-17 00:02:56,467:INFO:Training features set fitted successfully
+2023-08-17 00:02:56,467:INFO:Fitting the training labels set with the preprocessor
+2023-08-17 00:02:56,467:INFO:Training labels set fitted successfully
+2023-08-17 00:02:56,467:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-08-17 00:02:56,475:INFO:Training set transformed successfully
+2023-08-17 00:02:56,478:INFO:Testing set transformed successfully
+2023-08-17 00:02:56,478:INFO:Saving the transformed data
+2023-08-17 00:02:56,478:INFO:Directory for transformed data created successfully
+2023-08-17 00:02:56,646:INFO:Training features saved successfully
+2023-08-17 00:02:56,653:INFO:Training labels saved successfully
+2023-08-17 00:02:56,694:INFO:Testing features saved successfully
+2023-08-17 00:02:56,696:INFO:Testing labels saved successfully

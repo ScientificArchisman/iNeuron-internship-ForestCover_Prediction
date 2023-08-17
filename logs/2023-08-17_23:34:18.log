@@ -1,0 +1,33 @@
+2023-08-17 23:34:19,208:WARNING: * Debugger is active!
+2023-08-17 23:34:19,216:INFO: * Debugger PIN: 735-808-071
+2023-08-17 23:34:24,368:INFO:Data loaded successfully
+2023-08-17 23:34:24,432:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-17 23:34:24,432:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-17 23:34:24,432:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-17 23:34:24,528:INFO:Prediction completed
+2023-08-17 23:34:24,532:INFO:127.0.0.1 - - [17/Aug/2023 23:34:24] "POST / HTTP/1.1" 200 -
+2023-08-17 23:34:24,544:INFO:127.0.0.1 - - [17/Aug/2023 23:34:24] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2023-08-17 23:34:39,352:INFO:Data loaded successfully
+2023-08-17 23:34:39,380:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-17 23:34:39,381:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-17 23:34:39,381:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-17 23:34:39,474:INFO:Prediction completed
+2023-08-17 23:34:39,475:INFO:127.0.0.1 - - [17/Aug/2023 23:34:39] "POST / HTTP/1.1" 200 -
+2023-08-17 23:34:39,482:INFO:127.0.0.1 - - [17/Aug/2023 23:34:39] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2023-08-17 23:34:43,270:INFO:127.0.0.1 - - [17/Aug/2023 23:34:43] "GET / HTTP/1.1" 200 -
+2023-08-17 23:34:43,276:INFO:127.0.0.1 - - [17/Aug/2023 23:34:43] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2023-08-17 23:34:50,263:INFO:Data loaded successfully
+2023-08-17 23:34:50,282:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-17 23:34:50,283:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-17 23:34:50,283:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-17 23:34:50,549:INFO:Prediction completed
+2023-08-17 23:34:50,552:INFO:127.0.0.1 - - [17/Aug/2023 23:34:50] "POST / HTTP/1.1" 200 -
+2023-08-17 23:34:50,561:INFO:127.0.0.1 - - [17/Aug/2023 23:34:50] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2023-08-17 23:36:35,110:INFO:127.0.0.1 - - [17/Aug/2023 23:36:35] "GET / HTTP/1.1" 200 -
+2023-08-17 23:36:42,463:INFO:Data loaded successfully
+2023-08-17 23:36:42,494:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-17 23:36:42,496:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-17 23:36:42,496:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-17 23:36:42,580:INFO:Prediction completed
+2023-08-17 23:36:42,582:INFO:127.0.0.1 - - [17/Aug/2023 23:36:42] "POST / HTTP/1.1" 200 -
+2023-08-17 23:38:48,900:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/src/pipeline/training_pipeline.py', reloading

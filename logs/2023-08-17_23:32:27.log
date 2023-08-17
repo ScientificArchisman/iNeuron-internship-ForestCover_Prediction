@@ -1,0 +1,10 @@
+2023-08-17 23:32:28,292:WARNING: * Debugger is active!
+2023-08-17 23:32:28,299:INFO: * Debugger PIN: 735-808-071
+2023-08-17 23:32:30,347:INFO:Data loaded successfully
+2023-08-17 23:32:30,403:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-17 23:32:30,404:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-17 23:32:30,404:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-17 23:32:30,500:INFO:Prediction completed
+2023-08-17 23:32:30,648:INFO:127.0.0.1 - - [17/Aug/2023 23:32:30] "POST / HTTP/1.1" 200 -
+2023-08-17 23:32:30,662:INFO:127.0.0.1 - - [17/Aug/2023 23:32:30] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2023-08-17 23:32:50,526:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

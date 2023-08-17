@@ -1,26 +1,28 @@
 import os
 import pandas as pd
 import sys
-from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
 from src.exception import CustomException
 from src.logger import logging
 
 
     
-@dataclass
 class DataIngestion:
-    root_data_file : str = os.path.join("artifacts", "data")
-    test_data_file : str = os.path.join(root_data_file, "test_data.csv")
-    train_data_file : str = os.path.join(root_data_file, "train_data.csv")
-    raw_data_file : str = os.path.join(root_data_file, "raw_data.csv")
+
+    def __init__(self, data_path) -> None:
+        self.data_path : str = data_path
+        self.root_data_file : str = os.path.join("artifacts", "data")
+        self.test_data_file : str = os.path.join(self.root_data_file, "test_data.csv")
+        self.train_data_file : str = os.path.join(self.root_data_file, "train_data.csv")
+        self.raw_data_file : str = os.path.join(self.root_data_file, "raw_data.csv")
+
     
     logging.info("Entering data ingestion")
     def initiate_data_split(self):
         os.makedirs(self.root_data_file, exist_ok=True)
         
         try:
-            raw_data = pd.read_csv("train_forest.csv")
+            raw_data = pd.read_csv(self.data_path)
         except Exception as e:  
             logging.error("Error reading data")
             raise CustomException(e, sys)
@@ -42,5 +44,5 @@ class DataIngestion:
     
 
 if __name__ == "__main__":
-    data_ingestion = DataIngestion()
+    data_ingestion = DataIngestion("train_forest.csv")
     data_ingestion.initiate_data_split()
