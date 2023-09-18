@@ -7,4 +7,5 @@ pyaml
 optuna
 Flask
 flasgger
+xgboost
 -e .
