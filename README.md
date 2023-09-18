@@ -1,4 +1,3 @@
-Of course! Let's enhance the README with some visuals and emojis to make it more engaging:
 
 ---
 
