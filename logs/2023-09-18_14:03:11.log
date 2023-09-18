@@ -1,0 +1,41 @@
+2023-09-18 14:03:12,435:INFO:Entering data ingestion
+2023-09-18 14:03:12,479:INFO:Splitting data into train and test
+2023-09-18 14:03:12,482:INFO:Saving data to artifacts
+2023-09-18 14:03:12,606:INFO:Loading data for transformation
+2023-09-18 14:03:12,625:INFO:Data loaded successfully for transformation
+2023-09-18 14:03:12,625:INFO:Splitting data into features and labels
+2023-09-18 14:03:12,625:INFO:Training Data split successfully into features and labels
+2023-09-18 14:03:12,625:INFO:Testing Data split successfully into features and labels
+2023-09-18 14:03:12,625:INFO:Getting the preprocessor
+2023-09-18 14:03:12,626:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 14:03:12,626:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 14:03:12,626:INFO:Preprocessor loaded successfully
+2023-09-18 14:03:12,626:INFO:Fitting the training features set with the preprocessor
+2023-09-18 14:03:12,634:INFO:Training features set fitted successfully
+2023-09-18 14:03:12,634:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 14:03:12,634:INFO:Training labels set fitted successfully
+2023-09-18 14:03:12,634:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 14:03:12,639:INFO:Training set transformed successfully
+2023-09-18 14:03:12,641:INFO:Testing set transformed successfully
+2023-09-18 14:03:12,641:INFO:Saving the transformed data
+2023-09-18 14:03:12,641:INFO:Directory for transformed data created successfully
+2023-09-18 14:03:12,766:INFO:Training features saved successfully
+2023-09-18 14:03:12,771:INFO:Training labels saved successfully
+2023-09-18 14:03:12,798:INFO:Testing features saved successfully
+2023-09-18 14:03:12,799:INFO:Testing labels saved successfully
+2023-09-18 14:03:12,823:INFO:Evaluating Random Forest
+2023-09-18 14:03:14,292:INFO:Score for Random Forest is 0.8581349206349206
+2023-09-18 14:03:14,292:INFO:Evaluating XGBoost
+2023-09-18 14:03:15,007:INFO:Score for XGBoost is 0.845568783068783
+2023-09-18 14:03:15,007:INFO:Evaluating Decision Tree
+2023-09-18 14:03:15,094:INFO:Score for Decision Tree is 0.7668650793650794
+2023-09-18 14:03:15,094:INFO:Evaluating Gradient Boosting
+2023-09-18 14:03:27,725:INFO:Score for Gradient Boosting is 0.7847222222222222
+2023-09-18 14:03:27,725:INFO:Evaluating Ada Boost
+2023-09-18 14:03:28,163:INFO:Score for Ada Boost is 0.34656084656084657
+2023-09-18 14:03:28,163:INFO:Evaluating Extra Tree
+2023-09-18 14:03:28,175:INFO:Score for Extra Tree is 0.7000661375661376
+2023-09-18 14:03:28,176:INFO:Model results saved successfully
+2023-09-18 14:03:28,177:INFO:Saving the best model = Random Forest
+2023-09-18 14:03:28,196:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 14:03:28,196:INFO:Best model saved successfully

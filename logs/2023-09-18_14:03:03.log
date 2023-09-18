@@ -1,0 +1,4 @@
+2023-09-18 14:03:03,911:INFO:Entering data ingestion
+2023-09-18 14:03:04,029:WARNING: * Debugger is active!
+2023-09-18 14:03:04,034:INFO: * Debugger PIN: 535-302-191
+2023-09-18 14:03:06,156:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/src/pipeline/training_pipeline.py', reloading

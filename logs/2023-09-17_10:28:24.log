@@ -1,0 +1,18 @@
+2023-09-17 10:28:24,992:INFO:Entering data ingestion
+2023-09-17 10:28:25,074:WARNING: * Debugger is active!
+2023-09-17 10:28:25,081:INFO: * Debugger PIN: 535-302-191
+2023-09-17 10:29:57,537:INFO:127.0.0.1 - - [17/Sep/2023 10:29:57] "GET / HTTP/1.1" 200 -
+2023-09-17 10:29:57,735:INFO:127.0.0.1 - - [17/Sep/2023 10:29:57] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2023-09-17 10:29:57,738:INFO:127.0.0.1 - - [17/Sep/2023 10:29:57] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2023-09-17 10:29:57,754:INFO:127.0.0.1 - - [17/Sep/2023 10:29:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-09-17 10:30:26,837:INFO:Data loaded successfully
+2023-09-17 10:30:26,840:ERROR:Error loading preprocessor: node array from the pickle has an incompatible dtype:
+- expected: {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+- got     : [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+2023-09-17 10:30:26,841:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-17 10:30:26,841:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-17 10:30:26,865:ERROR:Error in making predictions: 'NoneType' object has no attribute 'predict'
+2023-09-17 10:30:26,870:INFO:127.0.0.1 - - [17/Sep/2023 10:30:26] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2023-09-17 10:30:26,882:INFO:127.0.0.1 - - [17/Sep/2023 10:30:26] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-09-17 10:30:26,884:INFO:127.0.0.1 - - [17/Sep/2023 10:30:26] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-09-17 10:30:26,888:INFO:127.0.0.1 - - [17/Sep/2023 10:30:26] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

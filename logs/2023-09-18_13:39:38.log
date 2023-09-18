@@ -1,0 +1,51 @@
+2023-09-18 13:39:39,601:INFO:Entering data ingestion
+2023-09-18 13:39:39,686:WARNING: * Debugger is active!
+2023-09-18 13:39:39,692:INFO: * Debugger PIN: 535-302-191
+2023-09-18 13:39:42,530:INFO:127.0.0.1 - - [18/Sep/2023 13:39:42] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 13:39:42,564:INFO:127.0.0.1 - - [18/Sep/2023 13:39:42] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 13:39:42,567:INFO:127.0.0.1 - - [18/Sep/2023 13:39:42] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 13:39:42,567:INFO:127.0.0.1 - - [18/Sep/2023 13:39:42] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 13:39:42,568:INFO:127.0.0.1 - - [18/Sep/2023 13:39:42] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 13:39:42,616:INFO:127.0.0.1 - - [18/Sep/2023 13:39:42] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 13:39:56,341:INFO:Splitting data into train and test
+2023-09-18 13:39:56,344:INFO:Saving data to artifacts
+2023-09-18 13:39:56,451:INFO:Loading data for transformation
+2023-09-18 13:39:56,467:INFO:Data loaded successfully for transformation
+2023-09-18 13:39:56,467:INFO:Splitting data into features and labels
+2023-09-18 13:39:56,467:INFO:Training Data split successfully into features and labels
+2023-09-18 13:39:56,467:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:39:56,467:INFO:Getting the preprocessor
+2023-09-18 13:39:56,468:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:39:56,468:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:39:56,468:INFO:Preprocessor loaded successfully
+2023-09-18 13:39:56,468:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:39:56,477:INFO:Training features set fitted successfully
+2023-09-18 13:39:56,477:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:39:56,478:INFO:Training labels set fitted successfully
+2023-09-18 13:39:56,478:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:39:56,482:INFO:Training set transformed successfully
+2023-09-18 13:39:56,484:INFO:Testing set transformed successfully
+2023-09-18 13:39:56,484:INFO:Saving the transformed data
+2023-09-18 13:39:56,484:INFO:Directory for transformed data created successfully
+2023-09-18 13:39:56,566:INFO:Training features saved successfully
+2023-09-18 13:39:56,570:INFO:Training labels saved successfully
+2023-09-18 13:39:56,591:INFO:Testing features saved successfully
+2023-09-18 13:39:56,592:INFO:Testing labels saved successfully
+2023-09-18 13:39:56,610:INFO:Evaluating Random Forest
+2023-09-18 13:39:57,724:INFO:Score for Random Forest is 0.8371900826446281
+2023-09-18 13:39:57,724:INFO:Evaluating XGBoost
+2023-09-18 13:39:58,359:INFO:Score for XGBoost is 0.8363636363636363
+2023-09-18 13:39:58,359:INFO:Evaluating Decision Tree
+2023-09-18 13:39:58,429:INFO:Score for Decision Tree is 0.740909090909091
+2023-09-18 13:39:58,429:INFO:Evaluating Gradient Boosting
+2023-09-18 13:40:08,577:INFO:Score for Gradient Boosting is 0.7710743801652893
+2023-09-18 13:40:08,577:INFO:Evaluating Ada Boost
+2023-09-18 13:40:08,946:INFO:Score for Ada Boost is 0.371900826446281
+2023-09-18 13:40:08,946:INFO:Evaluating Extra Tree
+2023-09-18 13:40:08,955:INFO:Score for Extra Tree is 0.6888429752066115
+2023-09-18 13:40:08,957:INFO:Model results saved successfully
+2023-09-18 13:40:08,958:INFO:Saving the best model = Random Forest
+2023-09-18 13:40:08,973:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:40:08,973:INFO:Best model saved successfully
+2023-09-18 13:40:08,979:INFO:127.0.0.1 - - [18/Sep/2023 13:40:08] "POST /train HTTP/1.1" 200 -
+2023-09-18 13:41:23,570:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

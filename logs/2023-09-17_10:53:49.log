@@ -1,0 +1,9 @@
+2023-09-17 10:53:50,330:INFO:Entering data ingestion
+2023-09-17 10:53:50,433:WARNING: * Debugger is active!
+2023-09-17 10:53:50,438:INFO: * Debugger PIN: 535-302-191
+2023-09-17 10:53:58,508:INFO:127.0.0.1 - - [17/Sep/2023 10:53:58] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-17 10:53:58,529:INFO:127.0.0.1 - - [17/Sep/2023 10:53:58] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-17 10:53:58,531:INFO:127.0.0.1 - - [17/Sep/2023 10:53:58] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-17 10:53:58,533:INFO:127.0.0.1 - - [17/Sep/2023 10:53:58] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-17 10:53:58,534:INFO:127.0.0.1 - - [17/Sep/2023 10:53:58] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-17 10:53:58,620:INFO:127.0.0.1 - - [17/Sep/2023 10:53:58] "GET /apispec_1.json HTTP/1.1" 200 -

@@ -1,0 +1,66 @@
+2023-09-17 10:30:58,531:INFO:Entering data ingestion
+2023-09-17 10:30:58,622:WARNING: * Debugger is active!
+2023-09-17 10:30:58,630:INFO: * Debugger PIN: 535-302-191
+2023-09-17 10:31:06,084:INFO:Data loaded successfully
+2023-09-17 10:31:06,086:ERROR:Error loading preprocessor: node array from the pickle has an incompatible dtype:
+- expected: {'names': ['left_child', 'right_child', 'feature', 'threshold', 'impurity', 'n_node_samples', 'weighted_n_node_samples', 'missing_go_to_left'], 'formats': ['<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<f8', 'u1'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56], 'itemsize': 64}
+- got     : [('left_child', '<i8'), ('right_child', '<i8'), ('feature', '<i8'), ('threshold', '<f8'), ('impurity', '<f8'), ('n_node_samples', '<i8'), ('weighted_n_node_samples', '<f8')]
+2023-09-17 10:31:06,087:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-17 10:31:06,087:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-17 10:31:06,102:ERROR:Error in making predictions: 'NoneType' object has no attribute 'predict'
+2023-09-17 10:31:06,106:INFO:127.0.0.1 - - [17/Sep/2023 10:31:06] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2023-09-17 10:31:06,113:INFO:127.0.0.1 - - [17/Sep/2023 10:31:06] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-09-17 10:31:06,113:INFO:127.0.0.1 - - [17/Sep/2023 10:31:06] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-09-17 10:31:06,116:INFO:127.0.0.1 - - [17/Sep/2023 10:31:06] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-09-17 10:31:11,452:INFO:127.0.0.1 - - [17/Sep/2023 10:31:11] "GET / HTTP/1.1" 200 -
+2023-09-17 10:31:17,396:INFO:127.0.0.1 - - [17/Sep/2023 10:31:17] "GET / HTTP/1.1" 200 -
+2023-09-17 10:31:17,939:INFO:127.0.0.1 - - [17/Sep/2023 10:31:17] "GET /train HTTP/1.1" 200 -
+2023-09-17 10:31:31,145:INFO:Splitting data into train and test
+2023-09-17 10:31:31,148:INFO:Saving data to artifacts
+2023-09-17 10:31:31,270:INFO:Loading data for transformation
+2023-09-17 10:31:31,288:INFO:Data loaded successfully for transformation
+2023-09-17 10:31:31,288:INFO:Splitting data into features and labels
+2023-09-17 10:31:31,288:INFO:Training Data split successfully into features and labels
+2023-09-17 10:31:31,288:INFO:Testing Data split successfully into features and labels
+2023-09-17 10:31:31,288:INFO:Getting the preprocessor
+2023-09-17 10:31:31,289:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-17 10:31:31,289:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-17 10:31:31,289:INFO:Preprocessor loaded successfully
+2023-09-17 10:31:31,289:INFO:Fitting the training features set with the preprocessor
+2023-09-17 10:31:31,296:INFO:Training features set fitted successfully
+2023-09-17 10:31:31,296:INFO:Fitting the training labels set with the preprocessor
+2023-09-17 10:31:31,297:INFO:Training labels set fitted successfully
+2023-09-17 10:31:31,297:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-17 10:31:31,301:INFO:Training set transformed successfully
+2023-09-17 10:31:31,303:INFO:Testing set transformed successfully
+2023-09-17 10:31:31,303:INFO:Saving the transformed data
+2023-09-17 10:31:31,303:INFO:Directory for transformed data created successfully
+2023-09-17 10:31:31,403:INFO:Training features saved successfully
+2023-09-17 10:31:31,407:INFO:Training labels saved successfully
+2023-09-17 10:31:31,433:INFO:Testing features saved successfully
+2023-09-17 10:31:31,434:INFO:Testing labels saved successfully
+2023-09-17 10:31:31,456:INFO:Evaluating Random Forest
+2023-09-17 10:31:32,867:INFO:Score for Random Forest is 0.8511904761904762
+2023-09-17 10:31:32,867:INFO:Evaluating XGBoost
+2023-09-17 10:31:33,557:INFO:Score for XGBoost is 0.845568783068783
+2023-09-17 10:31:33,557:INFO:Evaluating Decision Tree
+2023-09-17 10:31:33,644:INFO:Score for Decision Tree is 0.7599206349206349
+2023-09-17 10:31:33,644:INFO:Evaluating Gradient Boosting
+2023-09-17 10:31:46,105:INFO:Score for Gradient Boosting is 0.7847222222222222
+2023-09-17 10:31:46,105:INFO:Evaluating Ada Boost
+2023-09-17 10:31:46,532:INFO:Score for Ada Boost is 0.34656084656084657
+2023-09-17 10:31:46,532:INFO:Evaluating Extra Tree
+2023-09-17 10:31:46,543:INFO:Score for Extra Tree is 0.7027116402116402
+2023-09-17 10:31:46,545:INFO:Model results saved successfully
+2023-09-17 10:31:46,545:INFO:Saving the best model = Random Forest
+2023-09-17 10:31:46,563:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-17 10:31:46,563:INFO:Best model saved successfully
+2023-09-17 10:31:46,574:INFO:127.0.0.1 - - [17/Sep/2023 10:31:46] "POST /train HTTP/1.1" 200 -
+2023-09-17 10:31:58,907:INFO:127.0.0.1 - - [17/Sep/2023 10:31:58] "GET /train HTTP/1.1" 200 -
+2023-09-17 10:31:59,754:INFO:127.0.0.1 - - [17/Sep/2023 10:31:59] "GET / HTTP/1.1" 200 -
+2023-09-17 10:32:19,631:INFO:Data loaded successfully
+2023-09-17 10:32:19,661:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-17 10:32:19,661:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-17 10:32:19,662:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-17 10:32:19,726:INFO:Prediction completed
+2023-09-17 10:32:19,728:INFO:127.0.0.1 - - [17/Sep/2023 10:32:19] "POST / HTTP/1.1" 200 -

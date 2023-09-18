@@ -5,23 +5,47 @@ from src.logger import logging
 from src.pipeline.predict_pipeline import Predictpipeline
 from src.pipeline.training_pipeline import TrainModel
 import json
-
+import flasgger
+from flasgger import Swagger
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'csv'}
 
+Swagger(app)
 
 def allowed_file(filename):
+    """ Check if the file is allowed to be uploaded
+    Args:
+        filename (str): name of the file
+    Returns:
+        bool: True if allowed, False otherwise"""
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
 
 
-# @app.route("/")
-# def index():
-#     return render_template("index.html")
+@app.route("/")
+def index():
+    return render_template("index.html")
 
-@app.route('/', methods=['GET', 'POST'])
+
+
+
+@app.route('/predict_data', methods=['POST'])
 def predict_data():
+    """ Let's predict the forest cover type
+    ---
+    parameters:
+      - in: formData
+        name: file
+        type: file
+        required: true
+        description: The CSV file to upload.
+    responses:
+      200:
+        description: File successfully uploaded
+      400:
+        description: Bad request (e.g., no file provided)
+    """
     if request.method == 'POST':
         file = request.files['file']
         if file and allowed_file(file.filename):
@@ -42,8 +66,23 @@ def predict_data():
     return render_template('upload.html')
 
 
-@app.route('/train', methods=['GET', 'POST'])
+@app.route('/train', methods=['POST'])
 def train_model():
+    """ Let's predict the forest cover type
+    ---
+    parameters:
+      - in: formData
+        name: file
+        type: file
+        required: true
+        description: The CSV file to upload.
+    responses:
+      200:
+        description: File successfully uploaded
+      400:
+        description: Bad request (e.g., no file provided)
+    """
+     
     if request.method == 'POST':
         file = request.files['file']
         if file and allowed_file(file.filename):

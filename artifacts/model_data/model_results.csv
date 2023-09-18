@@ -1,17 +1,17 @@
 Model,Model_specs,Accuracy,Precision,Recall,F1
-Random Forest,RandomForestClassifier(),0.8508235428857482,0.8508235428857482,0.8508235428857482,0.8508235428857482
+Random Forest,RandomForestClassifier(),0.8311273125934391,0.8311273125934391,0.8311273125934391,0.8311273125934391
 XGBoost,"XGBClassifier(base_score=None, booster=None, callbacks=None,
               colsample_bylevel=None, colsample_bynode=None,
-              colsample_bytree=None, early_stopping_rounds=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
               enable_categorical=False, eval_metric=None, feature_types=None,
-              gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+              gamma=None, grow_policy=None, importance_type=None,
               interaction_constraints=None, learning_rate=None, max_bin=None,
               max_cat_threshold=None, max_cat_to_onehot=None,
               max_delta_step=None, max_depth=None, max_leaves=None,
               min_child_weight=None, missing=nan, monotone_constraints=None,
-              n_estimators=100, n_jobs=None, num_parallel_tree=None,
-              objective='multi:softprob', predictor=None, ...)",0.8447732951950382,0.8447732951950382,0.8447732951950382,0.8447732951950382
-Decision Tree,DecisionTreeClassifier(),0.7672976089920237,0.7672976089920237,0.7672976089920237,0.7672976089920237
-Gradient Boosting,GradientBoostingClassifier(),0.7800621013258617,0.7800621013258617,0.7800621013258617,0.7800621013258617
-Ada Boost,AdaBoostClassifier(),0.25739944455123415,0.25739944455123415,0.25739944455123415,0.25739944455123415
-Extra Tree,ExtraTreeClassifier(),0.6674261364648809,0.6674261364648809,0.6674261364648809,0.6674261364648809
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, objective='multi:softprob', ...)",0.8336009889372198,0.8336009889372198,0.8336009889372198,0.8336009889372198
+Decision Tree,DecisionTreeClassifier(),0.7413707805278996,0.7413707805278996,0.7413707805278996,0.7413707805278996
+Gradient Boosting,GradientBoostingClassifier(),0.7675901600703317,0.7675901600703317,0.7675901600703317,0.7675901600703317
+Ada Boost,AdaBoostClassifier(),0.28205925001297594,0.28205925001297594,0.28205925001297594,0.28205925001297594
+Extra Tree,ExtraTreeClassifier(),0.6632178275877401,0.6632178275877401,0.6632178275877401,0.6632178275877401

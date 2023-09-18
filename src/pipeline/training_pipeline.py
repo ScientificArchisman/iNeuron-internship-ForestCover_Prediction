@@ -40,7 +40,7 @@ class TrainModel:
     
 
 if __name__ == "__main__":
-    train_model = TrainModel(data_path="artifacts/data/raw_data.csv")
+    train_model = TrainModel(data_path="artifacts/data/train_forest.csv")
     model = train_model.train_model()
     print(model)
     

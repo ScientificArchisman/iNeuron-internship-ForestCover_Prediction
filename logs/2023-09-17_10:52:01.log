@@ -1,0 +1,21 @@
+2023-09-17 10:52:01,877:INFO:Entering data ingestion
+2023-09-17 10:52:01,959:WARNING: * Debugger is active!
+2023-09-17 10:52:01,965:INFO: * Debugger PIN: 535-302-191
+2023-09-17 10:52:10,905:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-17 10:52:10,919:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,920:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,920:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/favicon-32x32.png HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,922:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,923:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,924:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,924:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,926:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-17 10:52:10,926:INFO:127.0.0.1 - - [17/Sep/2023 10:52:10] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-17 10:52:11,017:INFO:127.0.0.1 - - [17/Sep/2023 10:52:11] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-17 10:53:13,005:INFO:Data loaded successfully
+2023-09-17 10:53:13,047:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-17 10:53:13,048:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-17 10:53:13,048:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-17 10:53:13,112:INFO:Prediction completed
+2023-09-17 10:53:13,113:INFO:127.0.0.1 - - [17/Sep/2023 10:53:13] "POST /predict_data HTTP/1.1" 200 -
+2023-09-17 10:53:49,021:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

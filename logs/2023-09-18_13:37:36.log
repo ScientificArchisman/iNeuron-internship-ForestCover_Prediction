@@ -1,0 +1,10 @@
+2023-09-18 13:37:37,157:INFO:Entering data ingestion
+2023-09-18 13:37:37,243:WARNING: * Debugger is active!
+2023-09-18 13:37:37,250:INFO: * Debugger PIN: 535-302-191
+2023-09-18 13:37:38,555:INFO:127.0.0.1 - - [18/Sep/2023 13:37:38] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 13:37:38,579:INFO:127.0.0.1 - - [18/Sep/2023 13:37:38] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 13:37:38,580:INFO:127.0.0.1 - - [18/Sep/2023 13:37:38] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 13:37:38,583:INFO:127.0.0.1 - - [18/Sep/2023 13:37:38] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 13:37:38,585:INFO:127.0.0.1 - - [18/Sep/2023 13:37:38] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 13:37:38,633:INFO:127.0.0.1 - - [18/Sep/2023 13:37:38] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 13:39:08,849:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

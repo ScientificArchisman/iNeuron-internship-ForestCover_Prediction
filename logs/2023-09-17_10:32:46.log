@@ -1,0 +1,10 @@
+2023-09-17 10:32:47,347:INFO:Entering data ingestion
+2023-09-17 10:32:47,430:WARNING: * Debugger is active!
+2023-09-17 10:32:47,435:INFO: * Debugger PIN: 535-302-191
+2023-09-17 10:32:51,238:INFO:127.0.0.1 - - [17/Sep/2023 10:32:51] "GET / HTTP/1.1" 200 -
+2023-09-17 10:33:02,066:INFO:127.0.0.1 - - [17/Sep/2023 10:33:02] "GET / HTTP/1.1" 200 -
+2023-09-17 10:33:02,775:INFO:127.0.0.1 - - [17/Sep/2023 10:33:02] "[33mGET /predict_data HTTP/1.1[0m" 404 -
+2023-09-17 10:33:09,039:INFO:127.0.0.1 - - [17/Sep/2023 10:33:09] "GET /predict HTTP/1.1" 200 -
+2023-09-17 10:33:17,397:INFO:127.0.0.1 - - [17/Sep/2023 10:33:17] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2023-09-17 10:33:37,725:INFO:127.0.0.1 - - [17/Sep/2023 10:33:37] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2023-09-17 10:33:48,593:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading

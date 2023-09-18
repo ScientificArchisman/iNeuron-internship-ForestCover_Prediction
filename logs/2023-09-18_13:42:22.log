@@ -1,0 +1,320 @@
+2023-09-18 13:42:22,889:INFO:Entering data ingestion
+2023-09-18 13:42:22,990:WARNING: * Debugger is active!
+2023-09-18 13:42:22,996:INFO: * Debugger PIN: 535-302-191
+2023-09-18 13:43:15,343:INFO:127.0.0.1 - - [18/Sep/2023 13:43:15] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 13:43:15,379:INFO:127.0.0.1 - - [18/Sep/2023 13:43:15] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 13:43:15,381:INFO:127.0.0.1 - - [18/Sep/2023 13:43:15] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 13:43:15,382:INFO:127.0.0.1 - - [18/Sep/2023 13:43:15] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 13:43:15,382:INFO:127.0.0.1 - - [18/Sep/2023 13:43:15] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 13:43:15,427:INFO:127.0.0.1 - - [18/Sep/2023 13:43:15] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 13:43:26,851:INFO:Splitting data into train and test
+2023-09-18 13:43:26,854:INFO:Saving data to artifacts
+2023-09-18 13:43:26,927:INFO:Loading data for transformation
+2023-09-18 13:43:26,940:INFO:Data loaded successfully for transformation
+2023-09-18 13:43:26,940:INFO:Splitting data into features and labels
+2023-09-18 13:43:26,940:INFO:Training Data split successfully into features and labels
+2023-09-18 13:43:26,941:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:43:26,941:INFO:Getting the preprocessor
+2023-09-18 13:43:26,941:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:43:26,942:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:43:26,942:INFO:Preprocessor loaded successfully
+2023-09-18 13:43:26,942:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:43:26,949:INFO:Training features set fitted successfully
+2023-09-18 13:43:26,949:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:43:26,949:INFO:Training labels set fitted successfully
+2023-09-18 13:43:26,949:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:43:26,953:INFO:Training set transformed successfully
+2023-09-18 13:43:26,955:INFO:Testing set transformed successfully
+2023-09-18 13:43:26,955:INFO:Saving the transformed data
+2023-09-18 13:43:26,955:INFO:Directory for transformed data created successfully
+2023-09-18 13:43:27,008:INFO:Training features saved successfully
+2023-09-18 13:43:27,010:INFO:Training labels saved successfully
+2023-09-18 13:43:27,023:INFO:Testing features saved successfully
+2023-09-18 13:43:27,024:INFO:Testing labels saved successfully
+2023-09-18 13:43:27,036:INFO:Evaluating Random Forest
+2023-09-18 13:43:27,732:INFO:Score for Random Forest is 0.8068475452196382
+2023-09-18 13:43:27,732:INFO:Evaluating XGBoost
+2023-09-18 13:43:28,961:INFO:Score for XGBoost is 0.7816537467700259
+2023-09-18 13:43:28,962:INFO:Evaluating Decision Tree
+2023-09-18 13:43:29,006:INFO:Score for Decision Tree is 0.7112403100775194
+2023-09-18 13:43:29,006:INFO:Evaluating Gradient Boosting
+2023-09-18 13:43:35,559:INFO:Score for Gradient Boosting is 0.7590439276485789
+2023-09-18 13:43:35,559:INFO:Evaluating Ada Boost
+2023-09-18 13:43:35,797:INFO:Score for Ada Boost is 0.4412144702842377
+2023-09-18 13:43:35,797:INFO:Evaluating Extra Tree
+2023-09-18 13:43:35,803:INFO:Score for Extra Tree is 0.6175710594315246
+2023-09-18 13:43:35,805:INFO:Model results saved successfully
+2023-09-18 13:43:35,806:INFO:Saving the best model = Random Forest
+2023-09-18 13:43:35,816:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:43:35,816:INFO:Best model saved successfully
+2023-09-18 13:43:35,820:INFO:127.0.0.1 - - [18/Sep/2023 13:43:35] "POST /train HTTP/1.1" 200 -
+2023-09-18 13:43:40,042:INFO:Splitting data into train and test
+2023-09-18 13:43:40,044:INFO:Saving data to artifacts
+2023-09-18 13:43:40,108:INFO:Loading data for transformation
+2023-09-18 13:43:40,115:INFO:Data loaded successfully for transformation
+2023-09-18 13:43:40,115:INFO:Splitting data into features and labels
+2023-09-18 13:43:40,115:INFO:Training Data split successfully into features and labels
+2023-09-18 13:43:40,116:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:43:40,116:INFO:Getting the preprocessor
+2023-09-18 13:43:40,116:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:43:40,116:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:43:40,116:INFO:Preprocessor loaded successfully
+2023-09-18 13:43:40,116:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:43:40,121:INFO:Training features set fitted successfully
+2023-09-18 13:43:40,121:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:43:40,121:INFO:Training labels set fitted successfully
+2023-09-18 13:43:40,121:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:43:40,124:INFO:Training set transformed successfully
+2023-09-18 13:43:40,125:INFO:Testing set transformed successfully
+2023-09-18 13:43:40,125:INFO:Saving the transformed data
+2023-09-18 13:43:40,125:INFO:Directory for transformed data created successfully
+2023-09-18 13:43:40,167:INFO:Training features saved successfully
+2023-09-18 13:43:40,169:INFO:Training labels saved successfully
+2023-09-18 13:43:40,179:INFO:Testing features saved successfully
+2023-09-18 13:43:40,180:INFO:Testing labels saved successfully
+2023-09-18 13:43:40,188:INFO:Evaluating Random Forest
+2023-09-18 13:43:40,747:INFO:Score for Random Forest is 0.801452784503632
+2023-09-18 13:43:40,747:INFO:Evaluating XGBoost
+2023-09-18 13:43:41,693:INFO:Score for XGBoost is 0.8030669895076675
+2023-09-18 13:43:41,693:INFO:Evaluating Decision Tree
+2023-09-18 13:43:41,729:INFO:Score for Decision Tree is 0.7231638418079096
+2023-09-18 13:43:41,729:INFO:Evaluating Gradient Boosting
+2023-09-18 13:43:47,144:INFO:Score for Gradient Boosting is 0.7578692493946732
+2023-09-18 13:43:47,144:INFO:Evaluating Ada Boost
+2023-09-18 13:43:47,344:INFO:Score for Ada Boost is 0.4180790960451977
+2023-09-18 13:43:47,344:INFO:Evaluating Extra Tree
+2023-09-18 13:43:47,350:INFO:Score for Extra Tree is 0.6472962066182405
+2023-09-18 13:43:47,351:INFO:Model results saved successfully
+2023-09-18 13:43:47,351:INFO:Saving the best model = XGBoost
+2023-09-18 13:43:47,358:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:43:47,358:INFO:Best model saved successfully
+2023-09-18 13:43:47,362:INFO:127.0.0.1 - - [18/Sep/2023 13:43:47] "POST /train HTTP/1.1" 200 -
+2023-09-18 13:44:21,874:INFO:Data loaded successfully
+2023-09-18 13:44:21,891:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:44:21,891:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:44:21,892:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:44:21,908:INFO:Prediction completed
+2023-09-18 13:44:21,910:INFO:127.0.0.1 - - [18/Sep/2023 13:44:21] "POST /predict_data HTTP/1.1" 200 -
+2023-09-18 13:46:07,573:INFO:127.0.0.1 - - [18/Sep/2023 13:46:07] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 13:46:07,593:INFO:127.0.0.1 - - [18/Sep/2023 13:46:07] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 13:46:07,595:INFO:127.0.0.1 - - [18/Sep/2023 13:46:07] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 13:46:07,595:INFO:127.0.0.1 - - [18/Sep/2023 13:46:07] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 13:46:07,596:INFO:127.0.0.1 - - [18/Sep/2023 13:46:07] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 13:46:07,642:INFO:127.0.0.1 - - [18/Sep/2023 13:46:07] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 13:46:22,219:INFO:Splitting data into train and test
+2023-09-18 13:46:22,220:INFO:Saving data to artifacts
+2023-09-18 13:46:22,268:INFO:Loading data for transformation
+2023-09-18 13:46:22,274:INFO:Data loaded successfully for transformation
+2023-09-18 13:46:22,274:INFO:Splitting data into features and labels
+2023-09-18 13:46:22,274:INFO:Training Data split successfully into features and labels
+2023-09-18 13:46:22,275:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:46:22,275:INFO:Getting the preprocessor
+2023-09-18 13:46:22,275:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:46:22,275:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:46:22,275:INFO:Preprocessor loaded successfully
+2023-09-18 13:46:22,275:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:46:22,280:INFO:Training features set fitted successfully
+2023-09-18 13:46:22,280:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:46:22,280:INFO:Training labels set fitted successfully
+2023-09-18 13:46:22,280:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:46:22,282:INFO:Training set transformed successfully
+2023-09-18 13:46:22,283:INFO:Testing set transformed successfully
+2023-09-18 13:46:22,283:INFO:Saving the transformed data
+2023-09-18 13:46:22,284:INFO:Directory for transformed data created successfully
+2023-09-18 13:46:22,317:INFO:Training features saved successfully
+2023-09-18 13:46:22,319:INFO:Training labels saved successfully
+2023-09-18 13:46:22,327:INFO:Testing features saved successfully
+2023-09-18 13:46:22,328:INFO:Testing labels saved successfully
+2023-09-18 13:46:22,335:INFO:Evaluating Random Forest
+2023-09-18 13:46:22,774:INFO:Score for Random Forest is 0.7790110998990918
+2023-09-18 13:46:22,774:INFO:Evaluating XGBoost
+2023-09-18 13:46:23,957:INFO:Score for XGBoost is 0.763874873864783
+2023-09-18 13:46:23,957:INFO:Evaluating Decision Tree
+2023-09-18 13:46:23,985:INFO:Score for Decision Tree is 0.693239152371342
+2023-09-18 13:46:23,985:INFO:Evaluating Gradient Boosting
+2023-09-18 13:46:28,280:INFO:Score for Gradient Boosting is 0.7386478304742684
+2023-09-18 13:46:28,280:INFO:Evaluating Ada Boost
+2023-09-18 13:46:28,446:INFO:Score for Ada Boost is 0.4399596367305752
+2023-09-18 13:46:28,446:INFO:Evaluating Extra Tree
+2023-09-18 13:46:28,450:INFO:Score for Extra Tree is 0.6236125126135217
+2023-09-18 13:46:28,452:INFO:Model results saved successfully
+2023-09-18 13:46:28,452:INFO:Saving the best model = Random Forest
+2023-09-18 13:46:28,459:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:46:28,459:INFO:Best model saved successfully
+2023-09-18 13:46:28,462:INFO:127.0.0.1 - - [18/Sep/2023 13:46:28] "POST /train HTTP/1.1" 200 -
+2023-09-18 13:46:41,601:INFO:Splitting data into train and test
+2023-09-18 13:46:41,604:INFO:Saving data to artifacts
+2023-09-18 13:46:41,627:INFO:Loading data for transformation
+2023-09-18 13:46:41,633:INFO:Data loaded successfully for transformation
+2023-09-18 13:46:41,633:INFO:Splitting data into features and labels
+2023-09-18 13:46:41,634:INFO:Training Data split successfully into features and labels
+2023-09-18 13:46:41,634:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:46:41,634:INFO:Getting the preprocessor
+2023-09-18 13:46:41,634:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:46:41,635:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:46:41,635:INFO:Preprocessor loaded successfully
+2023-09-18 13:46:41,635:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:46:41,642:INFO:Training features set fitted successfully
+2023-09-18 13:46:41,642:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:46:41,642:INFO:Training labels set fitted successfully
+2023-09-18 13:46:41,642:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:46:41,645:INFO:Training set transformed successfully
+2023-09-18 13:46:41,647:INFO:Testing set transformed successfully
+2023-09-18 13:46:41,647:INFO:Saving the transformed data
+2023-09-18 13:46:41,647:INFO:Directory for transformed data created successfully
+2023-09-18 13:46:41,658:INFO:Training features saved successfully
+2023-09-18 13:46:41,659:INFO:Training labels saved successfully
+2023-09-18 13:46:41,662:INFO:Testing features saved successfully
+2023-09-18 13:46:41,662:INFO:Testing labels saved successfully
+2023-09-18 13:46:41,665:INFO:Evaluating Random Forest
+2023-09-18 13:46:41,781:INFO:Score for Random Forest is 0.7085427135678392
+2023-09-18 13:46:41,781:INFO:Evaluating XGBoost
+2023-09-18 13:46:42,021:INFO:Score for XGBoost is 0.6733668341708543
+2023-09-18 13:46:42,021:INFO:Evaluating Decision Tree
+2023-09-18 13:46:42,027:INFO:Score for Decision Tree is 0.5979899497487438
+2023-09-18 13:46:42,027:INFO:Evaluating Gradient Boosting
+2023-09-18 13:46:43,077:INFO:Score for Gradient Boosting is 0.6884422110552764
+2023-09-18 13:46:43,077:INFO:Evaluating Ada Boost
+2023-09-18 13:46:43,133:INFO:Score for Ada Boost is 0.36180904522613067
+2023-09-18 13:46:43,133:INFO:Evaluating Extra Tree
+2023-09-18 13:46:43,135:INFO:Score for Extra Tree is 0.5276381909547738
+2023-09-18 13:46:43,136:INFO:Model results saved successfully
+2023-09-18 13:46:43,136:INFO:Saving the best model = Random Forest
+2023-09-18 13:46:43,139:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:46:43,139:INFO:Best model saved successfully
+2023-09-18 13:46:43,140:INFO:127.0.0.1 - - [18/Sep/2023 13:46:43] "POST /train HTTP/1.1" 200 -
+2023-09-18 13:46:54,436:INFO:Splitting data into train and test
+2023-09-18 13:46:54,438:INFO:Saving data to artifacts
+2023-09-18 13:46:54,445:INFO:Loading data for transformation
+2023-09-18 13:46:54,452:INFO:Data loaded successfully for transformation
+2023-09-18 13:46:54,452:INFO:Splitting data into features and labels
+2023-09-18 13:46:54,452:INFO:Training Data split successfully into features and labels
+2023-09-18 13:46:54,453:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:46:54,453:INFO:Getting the preprocessor
+2023-09-18 13:46:54,454:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:46:54,454:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:46:54,454:INFO:Preprocessor loaded successfully
+2023-09-18 13:46:54,454:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:46:54,463:INFO:Training features set fitted successfully
+2023-09-18 13:46:54,463:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:46:54,463:INFO:Training labels set fitted successfully
+2023-09-18 13:46:54,463:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:46:54,466:INFO:Training set transformed successfully
+2023-09-18 13:46:54,469:INFO:Testing set transformed successfully
+2023-09-18 13:46:54,469:INFO:Saving the transformed data
+2023-09-18 13:46:54,469:INFO:Directory for transformed data created successfully
+2023-09-18 13:46:54,473:INFO:Training features saved successfully
+2023-09-18 13:46:54,474:INFO:Training labels saved successfully
+2023-09-18 13:46:54,475:INFO:Testing features saved successfully
+2023-09-18 13:46:54,476:INFO:Testing labels saved successfully
+2023-09-18 13:46:54,479:INFO:Evaluating Random Forest
+2023-09-18 13:46:54,543:INFO:Score for Random Forest is 0.6
+2023-09-18 13:46:54,543:INFO:Evaluating XGBoost
+2023-09-18 13:46:54,871:INFO:Score for XGBoost is 0.625
+2023-09-18 13:46:54,871:INFO:Evaluating Decision Tree
+2023-09-18 13:46:54,873:INFO:Score for Decision Tree is 0.575
+2023-09-18 13:46:54,873:INFO:Evaluating Gradient Boosting
+2023-09-18 13:46:55,198:INFO:Score for Gradient Boosting is 0.55
+2023-09-18 13:46:55,198:INFO:Evaluating Ada Boost
+2023-09-18 13:46:55,229:INFO:Score for Ada Boost is 0.4
+2023-09-18 13:46:55,230:INFO:Evaluating Extra Tree
+2023-09-18 13:46:55,231:INFO:Score for Extra Tree is 0.525
+2023-09-18 13:46:55,232:INFO:Model results saved successfully
+2023-09-18 13:46:55,233:INFO:Saving the best model = XGBoost
+2023-09-18 13:46:55,236:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:46:55,236:INFO:Best model saved successfully
+2023-09-18 13:46:55,238:INFO:127.0.0.1 - - [18/Sep/2023 13:46:55] "POST /train HTTP/1.1" 200 -
+2023-09-18 13:49:40,331:INFO:127.0.0.1 - - [18/Sep/2023 13:49:40] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 13:49:40,368:INFO:127.0.0.1 - - [18/Sep/2023 13:49:40] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 13:49:40,368:INFO:127.0.0.1 - - [18/Sep/2023 13:49:40] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 13:49:40,368:INFO:127.0.0.1 - - [18/Sep/2023 13:49:40] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 13:49:40,370:INFO:127.0.0.1 - - [18/Sep/2023 13:49:40] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 13:49:40,416:INFO:127.0.0.1 - - [18/Sep/2023 13:49:40] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 13:49:51,525:INFO:Data loaded successfully
+2023-09-18 13:49:51,539:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:49:51,540:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:49:51,541:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:49:51,551:ERROR:Error in making predictions: Feature shape mismatch, expected: 20, got 19
+2023-09-18 13:49:51,560:INFO:127.0.0.1 - - [18/Sep/2023 13:49:51] "[35m[1mPOST /predict_data HTTP/1.1[0m" 500 -
+2023-09-18 13:50:18,941:INFO:Splitting data into train and test
+2023-09-18 13:50:18,943:INFO:Saving data to artifacts
+2023-09-18 13:50:18,950:INFO:Loading data for transformation
+2023-09-18 13:50:18,956:INFO:Data loaded successfully for transformation
+2023-09-18 13:50:18,956:INFO:Splitting data into features and labels
+2023-09-18 13:50:18,956:INFO:Training Data split successfully into features and labels
+2023-09-18 13:50:18,957:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:50:18,957:INFO:Getting the preprocessor
+2023-09-18 13:50:18,958:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:50:18,958:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:50:18,958:INFO:Preprocessor loaded successfully
+2023-09-18 13:50:18,958:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:50:18,967:INFO:Training features set fitted successfully
+2023-09-18 13:50:18,967:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:50:18,967:INFO:Training labels set fitted successfully
+2023-09-18 13:50:18,967:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:50:18,970:INFO:Training set transformed successfully
+2023-09-18 13:50:18,973:INFO:Testing set transformed successfully
+2023-09-18 13:50:18,973:INFO:Saving the transformed data
+2023-09-18 13:50:18,973:INFO:Directory for transformed data created successfully
+2023-09-18 13:50:18,977:INFO:Training features saved successfully
+2023-09-18 13:50:18,977:INFO:Training labels saved successfully
+2023-09-18 13:50:18,979:INFO:Testing features saved successfully
+2023-09-18 13:50:18,979:INFO:Testing labels saved successfully
+2023-09-18 13:50:18,983:INFO:Evaluating Random Forest
+2023-09-18 13:50:19,045:INFO:Score for Random Forest is 0.5625
+2023-09-18 13:50:19,045:INFO:Evaluating XGBoost
+2023-09-18 13:50:19,135:INFO:Score for XGBoost is 0.5625
+2023-09-18 13:50:19,136:INFO:Evaluating Decision Tree
+2023-09-18 13:50:19,138:INFO:Score for Decision Tree is 0.5
+2023-09-18 13:50:19,138:INFO:Evaluating Gradient Boosting
+2023-09-18 13:50:19,423:INFO:Score for Gradient Boosting is 0.53125
+2023-09-18 13:50:19,424:INFO:Evaluating Ada Boost
+2023-09-18 13:50:19,454:INFO:Score for Ada Boost is 0.40625
+2023-09-18 13:50:19,454:INFO:Evaluating Extra Tree
+2023-09-18 13:50:19,456:INFO:Score for Extra Tree is 0.3125
+2023-09-18 13:50:19,457:INFO:Model results saved successfully
+2023-09-18 13:50:19,457:INFO:Saving the best model = Random Forest
+2023-09-18 13:50:19,459:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:50:19,459:INFO:Best model saved successfully
+2023-09-18 13:50:19,460:INFO:127.0.0.1 - - [18/Sep/2023 13:50:19] "POST /train HTTP/1.1" 200 -
+2023-09-18 13:50:54,103:INFO:Splitting data into train and test
+2023-09-18 13:50:54,104:INFO:Saving data to artifacts
+2023-09-18 13:50:54,108:INFO:Loading data for transformation
+2023-09-18 13:50:54,115:INFO:Data loaded successfully for transformation
+2023-09-18 13:50:54,115:INFO:Splitting data into features and labels
+2023-09-18 13:50:54,115:INFO:Training Data split successfully into features and labels
+2023-09-18 13:50:54,116:INFO:Testing Data split successfully into features and labels
+2023-09-18 13:50:54,116:INFO:Getting the preprocessor
+2023-09-18 13:50:54,117:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:50:54,117:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:50:54,117:INFO:Preprocessor loaded successfully
+2023-09-18 13:50:54,117:INFO:Fitting the training features set with the preprocessor
+2023-09-18 13:50:54,127:INFO:Training features set fitted successfully
+2023-09-18 13:50:54,127:INFO:Fitting the training labels set with the preprocessor
+2023-09-18 13:50:54,127:INFO:Training labels set fitted successfully
+2023-09-18 13:50:54,127:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-09-18 13:50:54,131:INFO:Training set transformed successfully
+2023-09-18 13:50:54,134:INFO:Testing set transformed successfully
+2023-09-18 13:50:54,134:INFO:Saving the transformed data
+2023-09-18 13:50:54,134:INFO:Directory for transformed data created successfully
+2023-09-18 13:50:54,136:INFO:Training features saved successfully
+2023-09-18 13:50:54,136:INFO:Training labels saved successfully
+2023-09-18 13:50:54,137:INFO:Testing features saved successfully
+2023-09-18 13:50:54,137:INFO:Testing labels saved successfully
+2023-09-18 13:50:54,141:INFO:Evaluating Random Forest
+2023-09-18 13:50:54,198:INFO:Score for Random Forest is 0.42857142857142855
+2023-09-18 13:50:54,198:INFO:Evaluating XGBoost
+2023-09-18 13:50:54,238:INFO:Score for XGBoost is 0.14285714285714285
+2023-09-18 13:50:54,238:INFO:Evaluating Decision Tree
+2023-09-18 13:50:54,240:INFO:Score for Decision Tree is 0.42857142857142855
+2023-09-18 13:50:54,240:INFO:Evaluating Gradient Boosting
+2023-09-18 13:50:54,419:INFO:Score for Gradient Boosting is 0.42857142857142855
+2023-09-18 13:50:54,419:INFO:Evaluating Ada Boost
+2023-09-18 13:50:54,446:INFO:Score for Ada Boost is 0.14285714285714285
+2023-09-18 13:50:54,446:INFO:Evaluating Extra Tree
+2023-09-18 13:50:54,448:INFO:Score for Extra Tree is 0.42857142857142855
+2023-09-18 13:50:54,449:INFO:Model results saved successfully
+2023-09-18 13:50:54,450:INFO:Saving the best model = Decision Tree
+2023-09-18 13:50:54,450:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-09-18 13:50:54,450:INFO:Best model saved successfully
+2023-09-18 13:50:54,451:INFO:127.0.0.1 - - [18/Sep/2023 13:50:54] "POST /train HTTP/1.1" 200 -

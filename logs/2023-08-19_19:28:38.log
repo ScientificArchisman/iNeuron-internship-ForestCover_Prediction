@@ -1,0 +1,52 @@
+2023-08-19 19:28:39,194:INFO:Entering data ingestion
+2023-08-19 19:28:39,199:WARNING: * Debugger is active!
+2023-08-19 19:28:39,212:INFO: * Debugger PIN: 735-808-071
+2023-08-19 19:28:48,038:INFO:127.0.0.1 - - [19/Aug/2023 19:28:48] "GET / HTTP/1.1" 200 -
+2023-08-19 19:29:00,035:INFO:Data loaded successfully
+2023-08-19 19:29:00,088:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-08-19 19:29:00,089:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-19 19:29:00,089:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-19 19:29:00,176:INFO:Prediction completed
+2023-08-19 19:29:00,178:INFO:127.0.0.1 - - [19/Aug/2023 19:29:00] "POST / HTTP/1.1" 200 -
+2023-08-19 19:29:41,032:INFO:127.0.0.1 - - [19/Aug/2023 19:29:41] "GET /train HTTP/1.1" 200 -
+2023-08-19 19:29:48,216:INFO:Splitting data into train and test
+2023-08-19 19:29:48,220:INFO:Saving data to artifacts
+2023-08-19 19:29:48,415:INFO:Loading data for transformation
+2023-08-19 19:29:48,445:INFO:Data loaded successfully for transformation
+2023-08-19 19:29:48,445:INFO:Splitting data into features and labels
+2023-08-19 19:29:48,445:INFO:Training Data split successfully into features and labels
+2023-08-19 19:29:48,445:INFO:Testing Data split successfully into features and labels
+2023-08-19 19:29:48,445:INFO:Getting the preprocessor
+2023-08-19 19:29:48,446:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-08-19 19:29:48,446:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-08-19 19:29:48,446:INFO:Preprocessor loaded successfully
+2023-08-19 19:29:48,446:INFO:Fitting the training features set with the preprocessor
+2023-08-19 19:29:48,458:INFO:Training features set fitted successfully
+2023-08-19 19:29:48,458:INFO:Fitting the training labels set with the preprocessor
+2023-08-19 19:29:48,458:INFO:Training labels set fitted successfully
+2023-08-19 19:29:48,459:INFO:Transforming the training and testing dataset with the fitted preprocessor
+2023-08-19 19:29:48,465:INFO:Training set transformed successfully
+2023-08-19 19:29:48,469:INFO:Testing set transformed successfully
+2023-08-19 19:29:48,469:INFO:Saving the transformed data
+2023-08-19 19:29:48,469:INFO:Directory for transformed data created successfully
+2023-08-19 19:29:48,638:INFO:Training features saved successfully
+2023-08-19 19:29:48,645:INFO:Training labels saved successfully
+2023-08-19 19:29:48,686:INFO:Testing features saved successfully
+2023-08-19 19:29:48,688:INFO:Testing labels saved successfully
+2023-08-19 19:29:48,721:INFO:Evaluating Random Forest
+2023-08-19 19:29:50,923:INFO:Score for Random Forest is 0.8544973544973545
+2023-08-19 19:29:50,923:INFO:Evaluating XGBoost
+2023-08-19 19:29:56,877:INFO:Score for XGBoost is 0.84755291005291
+2023-08-19 19:29:56,877:INFO:Evaluating Decision Tree
+2023-08-19 19:29:57,076:INFO:Score for Decision Tree is 0.7648809523809523
+2023-08-19 19:29:57,076:INFO:Evaluating Gradient Boosting
+2023-08-19 19:30:17,501:INFO:Score for Gradient Boosting is 0.7847222222222222
+2023-08-19 19:30:17,501:INFO:Evaluating Ada Boost
+2023-08-19 19:30:18,218:INFO:Score for Ada Boost is 0.34656084656084657
+2023-08-19 19:30:18,218:INFO:Evaluating Extra Tree
+2023-08-19 19:30:18,237:INFO:Score for Extra Tree is 0.716931216931217
+2023-08-19 19:30:18,241:INFO:Model results saved successfully
+2023-08-19 19:30:18,242:INFO:Saving the best model = Random Forest
+2023-08-19 19:30:18,271:INFO:Preprocessor saved to artifacts/model_data/model.pkl
+2023-08-19 19:30:18,271:INFO:Best model saved successfully
+2023-08-19 19:30:18,285:INFO:127.0.0.1 - - [19/Aug/2023 19:30:18] "POST /train HTTP/1.1" 200 -

@@ -1,0 +1,40 @@
+2023-09-18 13:58:40,008:INFO:Entering data ingestion
+2023-09-18 13:58:40,095:WARNING: * Debugger is active!
+2023-09-18 13:58:40,102:INFO: * Debugger PIN: 535-302-191
+2023-09-18 13:58:42,766:INFO:127.0.0.1 - - [18/Sep/2023 13:58:42] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 13:58:42,775:INFO:127.0.0.1 - - [18/Sep/2023 13:58:42] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 13:58:42,776:INFO:127.0.0.1 - - [18/Sep/2023 13:58:42] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 13:58:42,776:INFO:127.0.0.1 - - [18/Sep/2023 13:58:42] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 13:58:42,778:INFO:127.0.0.1 - - [18/Sep/2023 13:58:42] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 13:58:42,877:INFO:127.0.0.1 - - [18/Sep/2023 13:58:42] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 13:58:53,115:INFO:Data loaded successfully
+2023-09-18 13:58:53,116:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:58:53,117:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:58:53,117:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:58:53,139:INFO:Prediction completed
+2023-09-18 13:58:53,140:INFO:127.0.0.1 - - [18/Sep/2023 13:58:53] "POST /predict_data HTTP/1.1" 200 -
+2023-09-18 13:59:09,019:INFO:Data loaded successfully
+2023-09-18 13:59:09,019:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:59:09,020:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:59:09,020:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:59:09,042:INFO:Prediction completed
+2023-09-18 13:59:09,042:INFO:127.0.0.1 - - [18/Sep/2023 13:59:09] "POST /predict_data HTTP/1.1" 200 -
+2023-09-18 13:59:25,396:INFO:Data loaded successfully
+2023-09-18 13:59:25,396:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:59:25,397:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:59:25,397:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:59:25,416:ERROR:Error in making predictions: X has 19 features, but DecisionTreeClassifier is expecting 18 features as input.
+2023-09-18 13:59:25,427:INFO:127.0.0.1 - - [18/Sep/2023 13:59:25] "[35m[1mPOST /predict_data HTTP/1.1[0m" 500 -
+2023-09-18 13:59:36,487:INFO:Data loaded successfully
+2023-09-18 13:59:36,487:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:59:36,488:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:59:36,488:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:59:36,501:ERROR:Error in making predictions: X has 19 features, but DecisionTreeClassifier is expecting 18 features as input.
+2023-09-18 13:59:36,506:INFO:127.0.0.1 - - [18/Sep/2023 13:59:36] "[35m[1mPOST /predict_data HTTP/1.1[0m" 500 -
+2023-09-18 13:59:42,047:INFO:Data loaded successfully
+2023-09-18 13:59:42,048:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:59:42,048:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:59:42,049:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:59:42,070:INFO:Prediction completed
+2023-09-18 13:59:42,070:INFO:127.0.0.1 - - [18/Sep/2023 13:59:42] "POST /predict_data HTTP/1.1" 200 -
+2023-09-18 14:03:02,606:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/src/pipeline/training_pipeline.py', reloading

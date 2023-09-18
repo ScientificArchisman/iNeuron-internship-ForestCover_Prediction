@@ -1,0 +1,6 @@
+2023-09-17 10:52:00,778:INFO:Entering data ingestion
+2023-09-17 10:52:00,869:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-17 10:52:00,869:INFO:[33mPress CTRL+C to quit[0m
+2023-09-17 10:52:00,870:INFO: * Restarting with stat
+2023-09-17 10:53:49,214:INFO: * Restarting with stat

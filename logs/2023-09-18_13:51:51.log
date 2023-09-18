@@ -1,0 +1,9 @@
+2023-09-18 13:52:07,265:ERROR:Error loading preprocessor: [Errno 2] No such file or directory: 'model.pkl'
+2023-09-18 13:53:01,993:INFO:Preprocessor loaded from /Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/artifacts/model_data/model.pkl
+2023-09-18 13:56:42,447:INFO:Preprocessor loaded from /Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/artifacts/model_data/model.pkl
+2023-09-18 13:57:39,151:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:57:39,152:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:57:39,152:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl
+2023-09-18 13:58:05,921:INFO:Preprocessor loaded from artifacts/model_data/model.pkl
+2023-09-18 13:58:05,922:INFO:Preprocessor saved to artifacts/preprocessor/preprocessor.pkl
+2023-09-18 13:58:05,922:INFO:Preprocessor saved to artifacts/preprocessor/label_encoding.pkl

@@ -1,0 +1,13 @@
+2023-09-17 10:49:46,617:INFO:Entering data ingestion
+2023-09-17 10:49:46,702:WARNING: * Debugger is active!
+2023-09-17 10:49:46,708:INFO: * Debugger PIN: 535-302-191
+2023-09-17 10:50:00,519:INFO:127.0.0.1 - - [17/Sep/2023 10:50:00] "GET /predict_data HTTP/1.1" 200 -
+2023-09-17 10:50:03,029:INFO:127.0.0.1 - - [17/Sep/2023 10:50:03] "GET /predict_data HTTP/1.1" 200 -
+2023-09-17 10:50:10,751:INFO:127.0.0.1 - - [17/Sep/2023 10:50:10] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-17 10:50:10,775:INFO:127.0.0.1 - - [17/Sep/2023 10:50:10] "GET /flasgger_static/swagger-ui.css HTTP/1.1" 200 -
+2023-09-17 10:50:10,775:INFO:127.0.0.1 - - [17/Sep/2023 10:50:10] "GET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2023-09-17 10:50:10,775:INFO:127.0.0.1 - - [17/Sep/2023 10:50:10] "GET /flasgger_static/swagger-ui-bundle.js HTTP/1.1" 200 -
+2023-09-17 10:50:10,775:INFO:127.0.0.1 - - [17/Sep/2023 10:50:10] "GET /flasgger_static/lib/jquery.min.js HTTP/1.1" 200 -
+2023-09-17 10:50:11,118:INFO:127.0.0.1 - - [17/Sep/2023 10:50:11] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-17 10:50:11,123:INFO:127.0.0.1 - - [17/Sep/2023 10:50:11] "GET /flasgger_static/favicon-32x32.png HTTP/1.1" 200 -
+2023-09-17 10:51:46,209:INFO: * Detected change in '/Users/archismanchakraborti/Desktop/python_files/iNeuron-internship-ForestCover_Prediction/app.py', reloading
