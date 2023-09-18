@@ -1,0 +1,26 @@
+2023-09-18 16:06:24,410:INFO:Entering data ingestion
+2023-09-18 16:06:24,495:WARNING: * Debugger is active!
+2023-09-18 16:06:24,503:INFO: * Debugger PIN: 535-302-191
+2023-09-18 16:06:30,491:INFO:127.0.0.1 - - [18/Sep/2023 16:06:30] "GET / HTTP/1.1" 200 -
+2023-09-18 16:06:32,910:INFO:127.0.0.1 - - [18/Sep/2023 16:06:32] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 16:06:32,923:INFO:127.0.0.1 - - [18/Sep/2023 16:06:32] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:32,923:INFO:127.0.0.1 - - [18/Sep/2023 16:06:32] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:32,923:INFO:127.0.0.1 - - [18/Sep/2023 16:06:32] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 16:06:32,924:INFO:127.0.0.1 - - [18/Sep/2023 16:06:32] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:33,030:INFO:127.0.0.1 - - [18/Sep/2023 16:06:33] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 16:06:36,884:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 16:06:36,889:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,889:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,890:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,890:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,892:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,896:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,896:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,896:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:36,937:INFO:127.0.0.1 - - [18/Sep/2023 16:06:36] "GET /apispec_1.json HTTP/1.1" 200 -
+2023-09-18 16:06:38,646:INFO:127.0.0.1 - - [18/Sep/2023 16:06:38] "GET /apidocs/ HTTP/1.1" 200 -
+2023-09-18 16:06:38,649:INFO:127.0.0.1 - - [18/Sep/2023 16:06:38] "[36mGET /flasgger_static/swagger-ui.css HTTP/1.1[0m" 304 -
+2023-09-18 16:06:38,651:INFO:127.0.0.1 - - [18/Sep/2023 16:06:38] "[36mGET /flasgger_static/lib/jquery.min.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:38,651:INFO:127.0.0.1 - - [18/Sep/2023 16:06:38] "[36mGET /flasgger_static/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:38,652:INFO:127.0.0.1 - - [18/Sep/2023 16:06:38] "[36mGET /flasgger_static/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2023-09-18 16:06:38,752:INFO:127.0.0.1 - - [18/Sep/2023 16:06:38] "GET /apispec_1.json HTTP/1.1" 200 -
